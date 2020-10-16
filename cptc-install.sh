@@ -1,13 +1,24 @@
 ## Direct binary installs
 apt update
-apt install ftp hydra-gtk gobuster dnsrecon sublist3r nikto cadaver enum4linux smbmap smbclient onesixtyone snmpenum sqsh default-mysql-client postgresql-client -y --upgrade
+apt install ftp cadaver snmpenum sqsh default-mysql-client postgresql-client -y --upgrade
 
-## Python Virtual Environment
+## Python Environment
 apt install python3.7 python3-pip
-pip3 install virtualenv
-virtualenv cptc-tools
-source cptc-tools/bin/activate
 
-## Python Specific tools
+## Pentest Framework
 
-
+git clone https://github.com/trustedsec/ptf.git
+echo "modules/exploitation/metasploit
+modules/vulnerability-analysis/nmap
+modules/exploitation/metasploit.py
+modules/vulnerability-analysis/hydra
+modules/intelligence-gathering/sublist3r
+modules/intelligence-gathering/dnsrecon
+modules/vulnerability-analysis/nikto
+modules/intelligence-gathering/gobuster
+modules/intelligence-gathering/enum4linux
+modules/intelligence-gathering/smbmap
+modules/intelligence-gathering/onesixtyone" > ptf/modules/custom_list/cptc.txt
+cd ptf
+pip install -r requirements.txt
+./ptf
