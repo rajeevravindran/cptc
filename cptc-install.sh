@@ -8,14 +8,11 @@ apt install python3.7 python3-pip
 ## Pentest Framework
 
 git clone https://github.com/trustedsec/ptf.git
-echo "modules/exploitation/metasploit
-modules/vulnerability-analysis/hydra
-modules/intelligence-gathering/sublist3r
-modules/vulnerability-analysis/nikto
+echo "modules/intelligence-gathering/sublist3r
 modules/intelligence-gathering/gobuster
-modules/intelligence-gathering/enum4linux
-modules/intelligence-gathering/smbmap
-modules/intelligence-gathering/onesixtyone" > ptf/modules/custom_list/cptc.txt
+modules/intelligence-gathering/ssh-audit
+modules/intelligence-gathering/linux-exploit-suggester
+modules/intelligence-gathering/linuxprivchecker" > ptf/modules/custom_list/cptc.txt
 cd ptf
 pip install -r requirements.txt
 ./ptf
