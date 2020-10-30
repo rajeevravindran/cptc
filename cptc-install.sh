@@ -12,7 +12,8 @@ echo "modules/intelligence-gathering/sublist3r
 modules/intelligence-gathering/gobuster
 modules/intelligence-gathering/ssh-audit
 modules/intelligence-gathering/linux-exploit-suggester
-modules/intelligence-gathering/linuxprivchecker" > ptf/modules/custom_list/cptc.txt
+modules/intelligence-gathering/linuxprivchecker
+modules/exploitation/nosqlmap" > ptf/modules/custom_list/cptc.txt
 cd ptf
 pip install -r requirements.txt
 ./ptf
