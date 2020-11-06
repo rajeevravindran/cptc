@@ -16,4 +16,7 @@ modules/intelligence-gathering/linuxprivchecker
 modules/exploitation/nosqlmap" > ptf/modules/custom_list/cptc.txt
 cd ptf
 pip install -r requirements.txt
-./ptf
+cd ..
+git clone https://github.com/maaaaz/nmaptocsv.git
+cd nmaptocsv
+pip install -r requirements.txt
