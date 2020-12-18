@@ -1,0 +1,1 @@
+nmap -p $2 $1 --script redis-brute
