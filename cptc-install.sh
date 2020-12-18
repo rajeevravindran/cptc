@@ -19,5 +19,6 @@ pip install -r requirements.txt
 cd ..
 git clone https://github.com/maaaaz/nmaptocsv.git
 cd nmaptocsv
+pip3 install mssql-cli
 pip3 install -r requirements.txt
 export PATH=$PATH:~/nmaptocsv
